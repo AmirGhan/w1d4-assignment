@@ -12,7 +12,9 @@ function actionWhenFound(indexNumber) {
 }
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
-
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], function(result) {
+  console.log("The result is:", result);
+});
 
 
 
